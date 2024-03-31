@@ -55,7 +55,19 @@ namespace GenericClassConcept
 
         public void StringMaximum(string firstNumber, string secoundNumber, string thirdNumber)
         {
-           
+            string maximumString = firstNumber;
+
+
+            if (maximumString.CompareTo(secoundNumber) > 0)
+            {
+                maximumString = secoundNumber;
+            }
+            if (maximumString.CompareTo(thirdNumber) > 0)
+            {
+                maximumString = thirdNumber;
+            }
+            Console.WriteLine($"the maximum number out of three string are {maximumString}");
+
 
         }
 
