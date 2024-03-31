@@ -36,35 +36,26 @@ namespace GenericClassConcept
 
         public void FloatMaximum(float firstNumber, float secoundNumber, float thirdNumber)
         {
-            float maximumInteger = firstNumber;
+            float maximumFloat = firstNumber;
 
 
-            if (maximumInteger.CompareTo(secoundNumber) > 0)
+            if (maximumFloat.CompareTo(secoundNumber) > 0)
             {
-                maximumInteger = secoundNumber;
+                maximumFloat = secoundNumber;
             }
-            if (maximumInteger.CompareTo(thirdNumber) > 0)
+            if (maximumFloat.CompareTo(thirdNumber) > 0)
             {
-                maximumInteger = thirdNumber;
+                maximumFloat = thirdNumber;
             }
-            Console.WriteLine($"the maximum number out of three digit are {maximumInteger}");
+            Console.WriteLine($"the maximum number out of three digit are {maximumFloat}");
+
+
 
         }
 
         public void StringMaximum(string firstNumber, string secoundNumber, string thirdNumber)
         {
-            string maximumInteger = firstNumber;
-
-
-            if (maximumInteger.CompareTo(secoundNumber) > 0)
-            {
-                maximumInteger = secoundNumber;
-            }
-            if (maximumInteger.CompareTo(thirdNumber) > 0)
-            {
-                maximumInteger = thirdNumber;
-            }
-            Console.WriteLine($"the maximum number out of three string are {maximumInteger}");
+           
 
         }
 
@@ -72,18 +63,6 @@ namespace GenericClassConcept
         {
 
            
-            ArrayList values  = new ArrayList();
-
-            foreach ( dataType  input in inputs ) { 
-            
-               values.Add( input );
-            
-            }
-
-            values.Sort();
-            Console.WriteLine($"the maximum value of the given inputs {values[values.Count - 1]}");
-            
-
 
         }
 
