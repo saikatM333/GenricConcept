@@ -74,7 +74,18 @@ namespace GenericClassConcept
         public void MaximumFinder<dataType>(params dataType[] inputs ) where dataType : IComparable<dataType>
         {
 
-           
+            ArrayList values = new ArrayList();
+
+            foreach (dataType input in inputs)
+            {
+
+                values.Add(input);
+
+            }
+
+            values.Sort();
+            Console.WriteLine($"the maximum value of the given inputs {values[values.Count - 1]}");
+
 
         }
 
